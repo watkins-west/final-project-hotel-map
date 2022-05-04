@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Hotel Closures in New York</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+</head>
+
+<body>
+    <!-- YOUR CONTENT GOES HERE -->
+    <div class="container">
+        <header>
+            <h1>Covid Casualties: These New York Hotels Didn't Survive The Pandemic</h1>
+        </header>
+    </div>
+
+    <div class="container header-image">
+
+        <div class="img">
+            <img src="skyline.jpeg" alt="An image of the Manhattan skyline." />
+        </div>
+
+        <p class="caption">
+            The majority of the hotels that haven't reopened are in Manhattan.
+        </p>
+    </div>
+
+    <div class="container">
+
+        <p class="byline">
+            By David Westenhaver
+        </p>
+
+        <p class="dateline">
+            Tuesday, May 3, 2021
+        </p>
+
+        <hr class="hr">
+    </div>
+    
+    <div class="container">
+        <p>
+            At least once a month, Bobby Garg, the president and CEO of SG Worldwide Inc., pays for a shipment of high-end whiskey and gin from India. A distillery in Uttar Pradesh makes the liquor. Dockworkers load the alcohol into a 20-foot crate, then place the crate on a ship in Mumbai. 21 days later, the ship drops anchor off the coast of Long Island, New York.
+            The ship needs to dock at the Port of New York and New Jersey before Garg can unload the liquor and sell it to distributors throughout the US. In February, Garg’s shipment sat off the New York coast for three weeks before unloading, leaving the proprietor without any product to sell. To make matters worse, he paid $16,000 for the shipment, more than five times the typical pre-Covid cost of about $3,000.
+            “Right now, you have to beg for a container, actually. They might have it for $14,000. So you tell them, I'll give you $16,000,” Garg said. “It’s a major hit to my bottom line.”
+        </p>
+ 
+        <p> 
+            Businesses across the US have struggled with skyrocketing shipping expenses and lengthy delays for much of the last year, forcing them to make a decision: raise prices or swallow the increased costs. Contract rates to ship containers to the US have nearly tripled in the past year, while one-off spot rates rose as much as 1000%.
+            The surge in prices led to record earnings for shipping companies in 2021, with industry-wide profits surpassing $150 billion for the year. The shipping industry has earned more profits in the last two years than in the rest of its history combined, according to John McCown, a veteran executive at various maritime shipping companies.
+        </p>
+
+        <p> 
+            President Joe Biden suggested in his State of the Union address that these profits stem from anti-competitive practices, but the shipping costs are also largely the result of both lower supply and higher demand, which stem from the early days of the pandemic.
+            With Covid’s onset in early 2020, shipping companies reduced the number of cargo ships in operation, expecting global trade to plummet. However, in mid-2020, American consumers began to purchase more goods than ever, eventually leading to clogged ports across the country. Strict Covid policies in China also led to a backup of US imports. 
+            Altogether, the increased demand for goods, reduced supply of ships and containers, and backups at ports led to a spike in prices. Now, importers like Garg are asking when, if ever, prices and shipping schedules will return to normal.
+        </p>
+    </div>
+
+
+    <div class="container">
+        <h2>
+            Report Highlights:
+        </h2>
+        <p>Use the dropdown to filter the trade data.</p>
+        <div>
+            <select class="filter">
+                <option value="item">Filter...</option>
+                <option value="downtown">Downtown</option>
+                <option value="midtown">Midtown</option>
+                <option value="uptown">Upper Manhattan</option>
+                <option value="small">Small Hotels (Fewer than 100 rooms) </option>
+                <option value="medium">Medium Hotels (100-300 Rooms)</option>
+                <option value="large">Large Hotels (Greater than 300 Rooms)</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div class="container image">
+            <div class="annotate">
+                <img id="annotated-image" src="Manh-map.jpeg" />
+
+                <div id="aka-wall-street" class="dot pink downtown medium visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>AKA Wall Street</h4>
+                        <p>
+                            <strong>Address:</strong> 84 William St, 10038
+                            <br>
+                            <strong>Rooms:</strong> 132
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+                <div id="best-western-bowery" class="dot green downtown small visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Best Western Bowery Hanbee Hotel</h4>
+                        <p>
+                            <strong>Address:</strong> 231 Grand St, 10013
+                            <br>
+                            <strong>Rooms:</strong> 99
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+                <div id="cassa-hotel" class="dot purple midtown medium visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Cassa Hotel New York</h4>
+                        <p>
+                            <strong>Address:</strong> 70 W 45th St, 10036
+                            <br>
+                            <strong>Rooms:</strong> 165
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+                <div id="comfort-inn-manhattan-bridge" class="dot red downtown small visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Comfort Inn Manhattan Bridge</h4>
+                        <p>
+                            <strong>Address:</strong> 61-63 Chrystie St, 10002
+                            <br>
+                            <strong>Rooms:</strong> 77
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+                <div id="courtyard-manhattan" class="dot blue midtown medium visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Courtyard by Marriott Herald Square</h4>
+                        <p>
+                            <strong>Address:</strong> 8 Herald Square, 10001
+                            <br>
+                            <strong>Rooms:</strong> 167
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+                <div id="deauville-hotel" class="dot yellow midtown small visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h3>Deauville Hotel</h3>
+                        <p>
+                            <strong>Address:</strong> 103 E 29th St, 10016
+                            <br>
+                            <strong>Rooms:</strong> 55
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+                <div id="doubletree-nyc" class="dot pink large midtown visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Doubletree by Hilton Metropolitan NYC</h4>
+                        <p>
+                            <strong>Address:</strong> 569 Lexington Ave, 10022
+                            <br>
+                            <strong>Rooms:</strong> 764
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="duane-street" class="dot green small downtown visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Duane Street Hotel</h4>
+                        <p>
+                            <strong>Address:</strong> 130 Duane St, 10013
+                            <br>
+                            <strong>Rooms:</strong> 45
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+                <div id="hilton-times-square" class="dot purple midtown large visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Hilton Times Square</h4>
+                        <p>
+                            <strong>Address:</strong> 234 West 42nd St, 10036
+                            <br>
+                            <strong>Rooms:</strong> 478
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+            
+                <div id="hotel-91" class="dot red downtown small visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Hotel 91</h4>
+                        <p>
+                            <strong>Address:</strong> 91 E Broadway, 10002
+                            <br>
+                            <strong>Rooms:</strong> 70
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+
+                <div id="hotel-pennsylvania" class="dot blue large midtown visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h4>Hotel Pennsylvania</h4>
+                        <p>
+                            <strong>Address:</strong> 401 Seventh Avenue, 10001
+                            <br>
+                            <strong>Rooms:</strong> 1707
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+
+                <div id="hudson-hotel" class="dot yellow midtown large visible item">
+                    <a class="close fa fa-times" href="#"></a>
+                    <div class="inner">
+                        <h3>Hudson Hotel New York</h3>
+                        <p>
+                            <strong>Address:</strong> 356 W 58th St, 10019
+                            <br>
+                            <strong>Rooms:</strong> 823
+                            <br>
+                            <strong>Status:</strong> Closed Permanently
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <p> 
+            The most likely scenario for reduced prices is an increase in supply, which could come from two sources. First, the astronomical profits could attract new firms to the market, leading to more competition and supply. Second, shipping companies could reinvest revenues into more containers and ships, reducing pressure on their current capital. But, shipping companies could be wary about investing in new equipment if they believe it’ll drive down costs too much.
+            “The industry has gone from not having an adequate return on capital, to earning enough money to buy assets that last for 20 years,” McCown said. “The carriers aren’t going to be adding capacity themselves because they like the dynamic.” 
+        </p>
+
+        <p>
+            Most economists agree that a change in supply is most likely to bring shipping costs down, but some believe a drop in demand for goods could drive the shift. 
+            Since Covid began, Americans have spent less of their income on services and more on goods, many of which are shipped from overseas. Consumers have begun to redirect more spending to services like restaurants and theater tickets over the past six months, but that transition has been slower than some expected. 
+            Chris Low, a chief economist at FHN Financial, said he expects both consumers and businesses to gradually taper off spending on goods over the next year, a change driven by a tighter monetary environment and a shift in appetite. If that reduced demand is met with any increase in supply, then shipping prices are likely to fall.
+        </p>
+
+        <p> 
+            Increased costs impact all businesses, but smaller companies tend to get hit the hardest. That’s because many of the largest importers in the country—massive corporations like Walmart, Target, and Home Depot—have long-term contracts with shipping companies. Long-term contract rates have gone up by two to three times the pre-Covid rate, but renting a single 40-foot container can cost eight to ten times as much today as it did two years ago.
+            Smaller companies that ship fewer containers don’t have the leverage to negotiate lower rates, according to Stephen Lamar, the CEO of the American Apparel and Footwear Association. Lamar consults with both large and small clothing importers on how to manage increased shipping costs. That’s forced many of the companies he works with, especially smaller businesses, to raise their retail prices.
+            “People are going to try to stay competitive, but they also want to stay in business,” Lamar said. “They end up passing those costs along to customers.”
+        </p>
+
+        <p> 
+            For Bobby Garg, the increased shipping costs have eaten at his profits, but so far he has resisted the temptation to raise his prices to make up for the cost.
+	        “I've been told by the distillery that I should raise prices, but I am trying to keep it down,” Garg said. “We try our best not to hurt the consumer's pocket.”
+        </p>
+
+        <hr>
+
+        <p>
+            <i class="fa fa-user" aria-hidden="true">
+                David Westenhaver is a reporter for <em>Issue Number One</em>, where he writes about international trade and cryptocurrencies. He is currently enrolled at the Newmark Journalism School at the CUNY Grad Center where he is planning to earn a Master's in Journalism in December of 2022.
+            </i>
+        </p>
+    </div>
+
+
+    <!-- Your javascript should be called here -->
+    <script src="main.js"></script>
+</body>
+
+</html>

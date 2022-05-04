@@ -1,0 +1,333 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+
+
+/** SET BORDER BOX EVERYWHERE */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/** APPLY BASE TAG STYLES */
+
+body,
+html {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    font-family: 'Georgia', sans-serif;
+    background-color: antiquewhite;
+}
+
+
+/** RESPONSIVE IMAGES */
+
+figure,
+img {
+    /* Sets image width to match parent */
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+header {
+    margin-bottom: 16px;
+}
+
+header p {
+    margin: 0;
+}
+
+/** Caption styles */
+
+.caption,
+figcaption {
+    font-size: 0.9rem;
+    color: #8e8a8a;
+    padding: 0;
+}
+
+
+/** BASE CLASSES */
+
+
+/** Container styles to keep content from becoming too wide or coming too close to
+* mobile edge */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/** Images are allowed to be a little wider when broken out into their own container */
+
+.container.header-image {
+    max-width: 1200px;
+    padding: 0;
+}
+
+#annotated-image {
+    max-width: 800px;
+}
+
+/** Styles for making dots visible/invisible based on JS */
+
+
+.item {
+display: none; 
+}
+    
+.item.visible {   
+display: initial;
+}
+
+/*
+.container.image .caption,
+.container.image figcaption {
+    padding: 5px 10px;
+} */
+
+/* Styles for all of the dots */
+.dot {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+   
+.dot .inner,
+.dot .close {
+    display: none;
+}
+
+.annotate {
+    position: relative;
+}
+
+.dot.active {
+    width: 250px;
+    height: 200px;
+    border-radius: 0;
+    z-index: 2;
+    padding: 5px;
+}
+
+.dot.active .inner,
+.dot.active .close {
+    display: block;
+}
+
+/* Styles for specific dots */
+/* Pink Dots */
+
+.pink {
+    background-color: rgba(255, 80, 173, 0.85)
+}
+
+#aka-wall-street {
+    bottom: 9.7%;
+    right: 40.5%;
+}
+
+#doubletree-nyc {
+    top: 33.9%;
+    right: 42%;
+}
+
+/* Green Dots */
+
+.green {
+    background-color: rgba(46, 204, 113, 0.85)
+}
+
+#best-western-bowery {
+    bottom: 23.2%;
+    right: 34.5%;
+}
+
+#duane-street {
+    bottom: 16.5%;
+    left: 48.8%;
+}
+
+/* Purple Dots */
+
+.purple {
+    background-color: rgba(169, 73, 248, 0.85)
+}
+
+#cassa-hotel {
+    top: 38.3%;
+    left: 41.7%;
+}
+
+#hilton-times-square {
+    top: 40.6%;
+    left: 33%;
+}
+
+/* Red Dots */
+
+.red {
+    background-color: rgba(255, 0, 0, 0.85)
+}
+
+#comfort-inn-manhattan-bridge {
+    bottom: 22%;
+    right: 32.2%;
+}
+
+#hotel-91 {
+    bottom: 19.8%;
+    right: 26.5%;
+}
+
+/* Blue Dots */
+
+.blue {
+    background-color: rgba(0, 128, 255, 0.85)
+}
+
+#courtyard-manhattan {
+    top: 45.5%;
+    left: 41.8%;
+}
+
+#hotel-pennsylvania {
+    top: 47%;
+    left: 36.7%;
+}
+
+/* Yellow Dots */
+
+.yellow {
+    background-color: rgba(251, 255, 0, 0.85)
+}
+
+#deauville-hotel {
+    top: 49%;
+    right: 44.5%;
+}
+
+#hudson-hotel {
+    top: 29.1%;
+    left: 25.5%;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+/*
+#shanghai:not(.active) {
+    top: 28.9%;
+    right: 22.95%;
+}
+
+#singapore:not(.active) {
+    top: 46.8%;
+    right: 27%;
+}
+
+#pearl-river:not(.active) {
+    top: 33.7%;
+    right: 24.6%;
+}
+
+#busan:not(.active) {
+    top: 26.2%;
+    right: 21.4%;
+}
+
+#rotterdam:not(.active) {
+    top: 16.5%;
+    left: 41.8%;
+}
+
+#nynj:not(.active) {
+    top: 22.5%;
+    left: 19.8%;
+}
+
+#los-angeles:not(.active) {
+    top: 26.9%;
+    left: 6.2%;
+}
+*/
+
+}
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 769px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+
+}
+
+
+/*********************************************************************
+  YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 805px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container {
+        padding: 0;
+    }
+}
+
+
+/*********************************************************************
+  YOUR LARGE DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+
+@media(min-width: 1205px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container.image .caption,
+    .container.image figcaption {
+        padding: 5px 0;
+    }
+}
