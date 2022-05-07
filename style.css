@@ -159,6 +159,31 @@ display: initial;
     right: 42%;
 }
 
+#luxe-life-hotel {
+    top: 47.6%;
+    right: 53.8%;
+}
+
+#sister-city {
+    bottom: 27.3%;
+    right: 34.9%;
+}
+
+#milburn {
+    top: 16.2%;
+    left: 15%;
+}
+
+#welive {
+    bottom: 7.5%;
+    right: 35.3%;
+}
+
+#chelsea-hilton {
+    top: 49.8%;
+    left: 38.2%;
+}
+
 /* Green Dots */
 
 .green {
@@ -173,6 +198,31 @@ display: initial;
 #duane-street {
     bottom: 16.5%;
     left: 48.8%;
+}
+
+#midtown-convention-center {
+    top: 43.6%;
+    left: 17.4%;
+}
+
+#blakely {
+    top: 31.2%;
+    left: 38%;
+}
+
+#maxwell {
+    top: 34.7%;
+    right: 42%;
+}
+
+#oakwood {
+    top: 41.8%;
+    right: 37.4%;
+}
+
+#bridgestreet {
+    top: 45.4%;
+    right: 47.2%;
 }
 
 /* Purple Dots */
@@ -191,6 +241,31 @@ display: initial;
     left: 33%;
 }
 
+#park-savoy-hotel {
+    top: 29%;
+    left: 42.3%;
+}
+
+#excelsior {
+    top: 11.7%;
+    left: 25.2%;
+}
+
+#nomad {
+    top: 50.3%;
+    right: 53%;
+}
+
+#radisson-wall-street {
+    bottom: 8.1%;
+    right: 41%;
+}
+
+#aka-un {
+    top: 37.5%;
+    right: 37.7%;
+}
+
 /* Red Dots */
 
 .red {
@@ -205,6 +280,26 @@ display: initial;
 #hotel-91 {
     bottom: 19.8%;
     right: 26.5%;
+}
+
+#riff-downtown {
+    bottom: 8.3%;
+    left: 49.6%;
+}
+
+#the-hotel-nyc {
+    top: 48.3%;
+    right: 41.6%;
+}
+
+#renwick {
+    top: 41.8%;
+    right: 43.4%;
+}
+
+#mansfield {
+    top: 39%;
+    left: 44.7%;
 }
 
 /* Blue Dots */
@@ -223,6 +318,26 @@ display: initial;
     left: 36.7%;
 }
 
+#sago-hotel {
+    bottom: 26.4%;
+    right: 27.7%;
+}
+
+#larchmont {
+    bottom: 37.3%;
+    right: 52.7%;
+}
+
+#roosevelt {
+    top: 35%;
+    right: 33%;
+}
+
+#paramount {
+    top: 37%;
+    left: 32%;
+}
+
 /* Yellow Dots */
 
 .yellow {
@@ -239,6 +354,26 @@ display: initial;
     left: 25.5%;
 }
 
+#salisbury-hotel {
+    top: 29%;
+    left: 38.3%;
+}
+
+#marmara {
+    top: 2.1%;
+    right: 36.3%;
+}
+
+#surrey {
+    top: 16%;
+    right: 50.2%;
+}
+
+#holiday-inn {
+    top: 36.4%;
+    left: 15.8%;
+}
+
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
@@ -246,7 +381,7 @@ display: initial;
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-
+    
     .dot {
         width: 15px;
         height: 15px;
@@ -254,43 +389,6 @@ display: initial;
         border-radius: 50%;
         position: absolute;
     }
-
-/*
-#shanghai:not(.active) {
-    top: 28.9%;
-    right: 22.95%;
-}
-
-#singapore:not(.active) {
-    top: 46.8%;
-    right: 27%;
-}
-
-#pearl-river:not(.active) {
-    top: 33.7%;
-    right: 24.6%;
-}
-
-#busan:not(.active) {
-    top: 26.2%;
-    right: 21.4%;
-}
-
-#rotterdam:not(.active) {
-    top: 16.5%;
-    left: 41.8%;
-}
-
-#nynj:not(.active) {
-    top: 22.5%;
-    left: 19.8%;
-}
-
-#los-angeles:not(.active) {
-    top: 26.9%;
-    left: 6.2%;
-}
-*/
 
 }
 
