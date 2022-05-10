@@ -4,7 +4,7 @@ dots.forEach(function (dot) {
     dot.addEventListener("click", function(e) {
         e.preventDefault();
         const clicked_dot = e.target;
-        clicked_dot.classList.toggle("active"); //change toggle to "add" for alternate click away//
+        clicked_dot.classList.toggle("active");
     });
 });
 

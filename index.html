@@ -29,7 +29,7 @@
     <!-- YOUR CONTENT GOES HERE -->
     <div class="container">
         <header>
-            <h1>Covid Casualties: These New York Hotels Didn't Survive The Pandemic</h1>
+            <h1>Covid Casualties: These Manhattan Hotels Didn't Survive The Pandemic</h1>
         </header>
     </div>
 
@@ -39,9 +39,6 @@
             <img src="skyline.jpeg" alt="An image of the Manhattan skyline." />
         </div>
 
-        <p class="caption">
-            The majority of the hotels that haven't reopened are in Manhattan.
-        </p>
     </div>
 
     <div class="container">
@@ -51,7 +48,7 @@
         </p>
 
         <p class="dateline">
-            Tuesday, May 3, 2021
+            Tuesday, May 10, 2021
         </p>
 
         <hr class="hr">
@@ -59,48 +56,54 @@
     
     <div class="container">
         <p>
-            At least once a month, Bobby Garg, the president and CEO of SG Worldwide Inc., pays for a shipment of high-end whiskey and gin from India. A distillery in Uttar Pradesh makes the liquor. Dockworkers load the alcohol into a 20-foot crate, then place the crate on a ship in Mumbai. 21 days later, the ship drops anchor off the coast of Long Island, New York.
-            The ship needs to dock at the Port of New York and New Jersey before Garg can unload the liquor and sell it to distributors throughout the US. In February, Garg’s shipment sat off the New York coast for three weeks before unloading, leaving the proprietor without any product to sell. To make matters worse, he paid $16,000 for the shipment, more than five times the typical pre-Covid cost of about $3,000.
-            “Right now, you have to beg for a container, actually. They might have it for $14,000. So you tell them, I'll give you $16,000,” Garg said. “It’s a major hit to my bottom line.”
+            Robert Miller, the president and founder of Travel Advocates, was on pace for his best year ever in 2020 when Covid hit. His business, which helps large groups book travel and accommodations throughout the US, earned two-thirds of its revenue from foreigners traveling to the US. The most popular destination was New York City. Now, less than one-fourth of his customers are international travelers, and New York has plummeted in its popularity amongst his clientele.
         </p>
  
         <p> 
-            Businesses across the US have struggled with skyrocketing shipping expenses and lengthy delays for much of the last year, forcing them to make a decision: raise prices or swallow the increased costs. Contract rates to ship containers to the US have nearly tripled in the past year, while one-off spot rates rose as much as 1000%.
-            The surge in prices led to record earnings for shipping companies in 2021, with industry-wide profits surpassing $150 billion for the year. The shipping industry has earned more profits in the last two years than in the rest of its history combined, according to John McCown, a veteran executive at various maritime shipping companies.
+            “We had virtually no international business coming to the States over the last 2 years,” Miller said. “We are finally seeing international business return.” 
         </p>
 
         <p> 
-            President Joe Biden suggested in his State of the Union address that these profits stem from anti-competitive practices, but the shipping costs are also largely the result of both lower supply and higher demand, which stem from the early days of the pandemic.
-            With Covid’s onset in early 2020, shipping companies reduced the number of cargo ships in operation, expecting global trade to plummet. However, in mid-2020, American consumers began to purchase more goods than ever, eventually leading to clogged ports across the country. Strict Covid policies in China also led to a backup of US imports. 
-            Altogether, the increased demand for goods, reduced supply of ships and containers, and backups at ports led to a spike in prices. Now, importers like Garg are asking when, if ever, prices and shipping schedules will return to normal.
+            As the US economy continues its long emergence from the harms of the Covid pandemic, international tourism is one of the last areas to recover. While domestic tourism has had a strong recovery, international tourism is uniquely important because foreign travelers take longer trips and spend more money than domestic travelers. 
         </p>
+
+        <p>
+            Economists and industry experts have attributed the lagging recovery to a handful of factors. The US has kept strict Covid travel restrictions for foreigners, including requiring tests and proof of vaccination. Some countries, like China and New Zealand, have their own restrictions making it difficult for their citizens to travel internationally. Political and economic uncertainty, including the Russia-Ukraine War, has also hurt the number of incoming travelers.
+        </p>
+
+        <hr>
     </div>
 
 
-    <div class="container">
-        <h2>
-            Report Highlights:
-        </h2>
-        <p>Use the dropdown to filter the trade data.</p>
-        <div>
-            <select class="filter">
-                <option value="item">Filter...</option>
-                <option value="downtown">Downtown</option>
-                <option value="midtown">Midtown</option>
-                <option value="uptown">Upper Manhattan</option>
-                <option value="small">Small Hotels (Fewer than 100 rooms) </option>
-                <option value="medium">Medium Hotels (100-300 Rooms)</option>
-                <option value="large">Large Hotels (Greater than 300 Rooms)</option>
-            </select>
+    <div class="container element">
+        <div class="container">
+            <h2>
+                Manhattan's Hotel Closures:
+            </h2>
+            <p>Use the dropdown to filter the hotels that have closed during the pandemic.</p>
+            <div>
+                <select class="filter">
+                    <option value="item">Filter...</option>
+                    <option value="downtown">Downtown</option>
+                    <option value="midtown">Midtown</option>
+                    <option value="uptown">Upper Manhattan</option>
+                    <option value="small">Small Hotels (Fewer than 100 rooms) </option>
+                    <option value="medium">Medium Hotels (100-300 Rooms)</option>
+                    <option value="large">Large Hotels (Greater than 300 Rooms)</option>
+                    <option value="closed">Closed Permanently</option>
+                    <option value="reopening">Reopening in the Future</option>
+                    <option value="converted">Converted to Residences</option>
+                </select>
+            </div>
         </div>
 
         <br>
 
-        <div class="container image">
+        <div class="container element">
             <div class="annotate">
                 <img id="annotated-image" src="Manh-Map-Desaturated.jpeg" />
 
-                <div id="aka-wall-street" class="dot pink downtown medium visible item">
+                <div id="aka-wall-street" class="dot pink downtown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>AKA Wall Street</h4>
@@ -114,7 +117,7 @@
                     </div>
                 </div>
 
-                <div id="best-western-bowery" class="dot green downtown small visible item">
+                <div id="best-western-bowery" class="dot green downtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Best Western Bowery Hanbee Hotel</h4>
@@ -128,7 +131,7 @@
                     </div>
                 </div>
 
-                <div id="cassa-hotel" class="dot purple midtown medium visible item">
+                <div id="cassa-hotel" class="dot purple midtown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Cassa Hotel New York</h4>
@@ -142,7 +145,7 @@
                     </div>
                 </div>
 
-                <div id="comfort-inn-manhattan-bridge" class="dot red downtown small visible item">
+                <div id="comfort-inn-manhattan-bridge" class="dot red downtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Comfort Inn Manhattan Bridge</h4>
@@ -156,7 +159,7 @@
                     </div>
                 </div>
 
-                <div id="courtyard-manhattan" class="dot blue midtown medium visible item">
+                <div id="courtyard-manhattan" class="dot blue midtown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Courtyard by Marriott Herald Square</h4>
@@ -170,7 +173,7 @@
                     </div>
                 </div>
 
-                <div id="deauville-hotel" class="dot yellow midtown small visible item">
+                <div id="deauville-hotel" class="dot yellow midtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h3>Deauville Hotel</h3>
@@ -184,7 +187,7 @@
                     </div>
                 </div>
 
-                <div id="doubletree-nyc" class="dot pink large midtown visible item">
+                <div id="doubletree-nyc" class="dot pink large midtown closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Doubletree by Hilton Metropolitan NYC</h4>
@@ -198,7 +201,7 @@
                     </div>
                 </div>
                 
-                <div id="duane-street" class="dot green small downtown visible item">
+                <div id="duane-street" class="dot green small downtown closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Duane Street Hotel</h4>
@@ -212,7 +215,7 @@
                     </div>
                 </div>
 
-                <div id="hilton-times-square" class="dot purple midtown large visible item">
+                <div id="hilton-times-square" class="dot purple midtown closed large visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Hilton Times Square</h4>
@@ -227,7 +230,7 @@
                 </div>
 
             
-                <div id="hotel-91" class="dot red downtown small visible item">
+                <div id="hotel-91" class="dot red downtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Hotel 91</h4>
@@ -242,7 +245,7 @@
                 </div>
 
 
-                <div id="hotel-pennsylvania" class="dot blue large midtown visible item">
+                <div id="hotel-pennsylvania" class="dot blue large midtown closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Hotel Pennsylvania</h4>
@@ -256,7 +259,7 @@
                     </div>
                 </div>
 
-                <div id="hudson-hotel" class="dot yellow midtown large visible item">
+                <div id="hudson-hotel" class="dot yellow midtown large closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h3>Hudson Hotel New York</h3>
@@ -271,7 +274,7 @@
                 </div>
 
                 
-                <div id="luxe-life-hotel" class="dot pink midtown small visible item">
+                <div id="luxe-life-hotel" class="dot pink midtown small reopening visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Luxe Life Hotel</h4>
@@ -286,7 +289,7 @@
                 </div>
 
                 
-                <div id="midtown-convention-center" class="dot green midtown small visible item">
+                <div id="midtown-convention-center" class="dot green midtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Midtown Convention Center Hotel</h4>
@@ -301,7 +304,7 @@
                 </div>
 
                 
-                <div id="park-savoy-hotel" class="dot purple midtown small visible item">
+                <div id="park-savoy-hotel" class="dot purple midtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Park Savoy Hotel</h4>
@@ -315,7 +318,7 @@
                     </div>
                 </div>
 
-                <div id="riff-downtown" class="dot red downtown small visible item">
+                <div id="riff-downtown" class="dot red downtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Riff Downtown</h4>
@@ -329,7 +332,7 @@
                     </div>
                 </div>
 
-                <div id="sago-hotel" class="dot blue downtown small visible item">
+                <div id="sago-hotel" class="dot blue downtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Sago Hotel</h4>
@@ -343,7 +346,7 @@
                     </div>
                 </div>
 
-                <div id="salisbury-hotel" class="dot yellow midtown medium visible item">
+                <div id="salisbury-hotel" class="dot yellow midtown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h3>Salisbury Hotel</h3>
@@ -357,7 +360,7 @@
                     </div>
                 </div>
 
-                <div id="sister-city" class="dot pink medium downtown visible item">
+                <div id="sister-city" class="dot pink medium downtown closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Sister City Bowery Hotel</h4>
@@ -371,7 +374,7 @@
                     </div>
                 </div>
                 
-                <div id="blakely" class="dot green medium downtown visible item">
+                <div id="blakely" class="dot green medium midtown closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Blakely New York</h4>
@@ -385,7 +388,7 @@
                     </div>
                 </div>
 
-                <div id="excelsior" class="dot purple uptown medium visible item">
+                <div id="excelsior" class="dot purple uptown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Excelsior Hotel</h4>
@@ -399,7 +402,7 @@
                     </div>
                 </div>
             
-                <div id="the-hotel-nyc" class="dot red midtown medium visible item">
+                <div id="the-hotel-nyc" class="dot red midtown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Hotel @ New York City</h4>
@@ -414,7 +417,7 @@
                 </div>
 
 
-                <div id="larchmont" class="dot blue downtown small visible item">
+                <div id="larchmont" class="dot blue downtown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Larchmont Hotel</h4>
@@ -428,7 +431,7 @@
                     </div>
                 </div>
 
-                <div id="marmara" class="dot yellow uptown small visible item">
+                <div id="marmara" class="dot yellow uptown small closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h3>The Marmara Manhattan</h3>
@@ -442,7 +445,7 @@
                     </div>
                 </div>
 
-                <div id="milburn" class="dot pink uptown medium visible item">
+                <div id="milburn" class="dot pink uptown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Milburn Hotel</h4>
@@ -456,7 +459,7 @@
                     </div>
                 </div>
 
-                <div id="maxwell" class="dot green midtown large visible item">
+                <div id="maxwell" class="dot green midtown large closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Maxwell New York City</h4>
@@ -470,7 +473,7 @@
                     </div>
                 </div>
 
-                <div id="nomad" class="dot purple midtown medium visible item">
+                <div id="nomad" class="dot purple midtown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The NoMad Hotel</h4>
@@ -484,7 +487,7 @@
                     </div>
                 </div>
 
-                <div id="renwick" class="dot red midtown medium visible item">
+                <div id="renwick" class="dot red midtown medium converted visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Renwick Hotel</h4>
@@ -498,7 +501,7 @@
                     </div>
                 </div>
 
-                <div id="roosevelt" class="dot blue midtown large visible item">
+                <div id="roosevelt" class="dot blue midtown large closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Roosevelt</h4>
@@ -512,7 +515,7 @@
                     </div>
                 </div>
 
-                <div id="surrey" class="dot yellow uptown medium visible item">
+                <div id="surrey" class="dot yellow uptown medium closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h3>The Surrey</h3>
@@ -526,7 +529,7 @@
                     </div>
                 </div>
 
-                <div id="welive" class="dot pink small downtown visible item">
+                <div id="welive" class="dot pink small downtown closed visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>WeLive Wall Street</h4>
@@ -540,7 +543,7 @@
                     </div>
                 </div>
                 
-                <div id="oakwood" class="dot green small midtown visible item">
+                <div id="oakwood" class="dot green small midtown converted visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Oakwood at the Nash</h4>
@@ -554,7 +557,7 @@
                     </div>
                 </div>
 
-                <div id="mansfield" class="dot red midtown medium visible item">
+                <div id="mansfield" class="dot red midtown medium converted visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>The Mansfield</h4>
@@ -569,7 +572,7 @@
                 </div>
 
            
-                <div id="radisson-wall-street" class="dot purple downtown medium visible item">
+                <div id="radisson-wall-street" class="dot purple downtown medium reopening visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Radisson Wall Street</h4>
@@ -583,7 +586,7 @@
                     </div>
                 </div>
 
-                <div id="paramount" class="dot blue large midtown visible item">
+                <div id="paramount" class="dot blue large midtown reopening visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Paramount Hotel</h4>
@@ -597,7 +600,7 @@
                     </div>
                 </div>
 
-                <div id="holiday-inn" class="dot yellow midtown medium visible item">
+                <div id="holiday-inn" class="dot yellow midtown medium reopening visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h3>Holiday Inn Express Midtown West</h3>
@@ -611,7 +614,7 @@
                     </div>
                 </div>
    
-                <div id="chelsea-hilton" class="dot pink midtown medium visible item">
+                <div id="chelsea-hilton" class="dot pink midtown medium reopening visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>Doubletree by Hilton Hotel - Chelsea</h4>
@@ -625,7 +628,7 @@
                     </div>
                 </div>
       
-                <div id="bridgestreet" class="dot green midtown medium visible item">
+                <div id="bridgestreet" class="dot green midtown medium converted visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>34th and Madison by Bridgestreet</h4>
@@ -639,7 +642,7 @@
                     </div>
                 </div>
                 
-                <div id="aka-un" class="dot purple midtown small visible item">
+                <div id="aka-un" class="dot purple midtown small converted visible item">
                     <a class="close fa fa-times" href="#"></a>
                     <div class="inner">
                         <h4>AKA United Nations</h4>
@@ -657,26 +660,46 @@
     </div>
 
     <div class="container">
+        <hr>
+
         <p> 
-            The most likely scenario for reduced prices is an increase in supply, which could come from two sources. First, the astronomical profits could attract new firms to the market, leading to more competition and supply. Second, shipping companies could reinvest revenues into more containers and ships, reducing pressure on their current capital. But, shipping companies could be wary about investing in new equipment if they believe it’ll drive down costs too much.
-            “The industry has gone from not having an adequate return on capital, to earning enough money to buy assets that last for 20 years,” McCown said. “The carriers aren’t going to be adding capacity themselves because they like the dynamic.” 
+            For Vijay Dandapani, the president of the NYC Hotel Association, the travel restrictions have played a large role in the harm that Covid has done to New York’s hotels. “We are the only country in the developed world that still has a testing requirement,” Dandapani said. “That's a pretty huge deterrent.”        
         </p>
 
         <p>
-            Most economists agree that a change in supply is most likely to bring shipping costs down, but some believe a drop in demand for goods could drive the shift. 
-            Since Covid began, Americans have spent less of their income on services and more on goods, many of which are shipped from overseas. Consumers have begun to redirect more spending to services like restaurants and theater tickets over the past six months, but that transition has been slower than some expected. 
-            Chris Low, a chief economist at FHN Financial, said he expects both consumers and businesses to gradually taper off spending on goods over the next year, a change driven by a tighter monetary environment and a shift in appetite. If that reduced demand is met with any increase in supply, then shipping prices are likely to fall.
+            In November, President Joe Biden lifted an 18-month ban on travel from 33 countries, including China and much of the European Union. The lift only applied to fully vaccinated travelers, who now need to show proof of vaccination and a negative Covid test within three days of traveling.
         </p>
 
         <p> 
-            Increased costs impact all businesses, but smaller companies tend to get hit the hardest. That’s because many of the largest importers in the country—massive corporations like Walmart, Target, and Home Depot—have long-term contracts with shipping companies. Long-term contract rates have gone up by two to three times the pre-Covid rate, but renting a single 40-foot container can cost eight to ten times as much today as it did two years ago.
-            Smaller companies that ship fewer containers don’t have the leverage to negotiate lower rates, according to Stephen Lamar, the CEO of the American Apparel and Footwear Association. Lamar consults with both large and small clothing importers on how to manage increased shipping costs. That’s forced many of the companies he works with, especially smaller businesses, to raise their retail prices.
-            “People are going to try to stay competitive, but they also want to stay in business,” Lamar said. “They end up passing those costs along to customers.”
+            International travel to the US fell dramatically in 2020, but New York City may have been hit the hardest. In 2019, about 13.5 million people traveled to New York. In 2020, that number fell by more than 90 percent, according to the Port Authority of New York and New Jersey. That dramatic hit has been largely attributed to the city’s own coronavirus response, where proof-of-vaccination and mask mandates were stricter than in other tourism capitals like Florida and Nevada.
         </p>
 
         <p> 
-            For Bobby Garg, the increased shipping costs have eaten at his profits, but so far he has resisted the temptation to raise his prices to make up for the cost.
-	        “I've been told by the distillery that I should raise prices, but I am trying to keep it down,” Garg said. “We try our best not to hurt the consumer's pocket.”
+            The lack of foreign visitors has sent ripples across the economy. In New York, more than 100 hotels in the city have remained closed since the start of the Covid pandemic, some permanently. Hotels employ about 20,000 fewer New Yorkers compared with before the pandemic, according to the NYC Hotel Association. Nationally, that number is almost half a million, according to the American Hotel and Lodging Association. 
+        </p>
+
+        <p>
+            Citywide revenues for hotels are still down 25% from 2019, according to Dandapani’s organization, which advocates for hotels across the city. Dandapani forecasts a gradual recovery in international travel to NYC for the next two years, with the city reaching pre-pandemic numbers in 2024. Accommodating pre-pandemic numbers of tourists will require increased investment. With so many hotels closing down, New York City lost more than 20,000 hotel rooms within which to house those travelers.
+        </p>
+
+        <p>
+            Hotels aren’t the only businesses that lost jobs due to a lack of travelers though. Robert Miller was forced to lay off all but a handful of his staff when Covid-driven PPP loans expired in June 2020. The only employees Miller kept on were a handful who helped process cancellations by former customers. Those employees accepted lower wages rather than losing their jobs.
+        </p>
+
+        <p>
+            “We had to stretch what dollars were left,” Miller said. He pivoted the business towards domestic travelers, who had saved up money from the early days of Covid and were desperately looking to get out of their homes and travel. That move paid off, as his business was able to weather the storm. Now, with international travel potentially recovering, he forecasts a strong 2022. He’s also been able to rehire almost every employee that he laid off. “Getting our ‘family’ back working together is the best feeling,” Miller said.
+        </p>
+
+        <p>
+            Though New York City has been hurting much more than the rest of the country, one explanation for the slow recovery of international travel is that the average American is much better off today than their overseas counterparts. This trend has been reflected in the US trade balance—which counts international tourism as an exported service—where the growing deficit has shown that Americans, largely buoyed by stimulus, have spent heavily. “The US consumer has been so strong relative to the consumer elsewhere in the world,” said James Knightley, chief international economist at ING Financial Markets. “Foreign tourists can really drive the experience-orientated sector and travel and leisure to do much better.”
+        </p>
+
+        <p>
+            New York City Mayor Eric Adams has spent ample time talking about the importance of getting tourists back to his city. "My administration is laser-focused on driving tourism in this city and letting the world know that New York City is back," said Mayor Adams in an address in late March. "Our hospitality and tourism industry have long been an engine of economic prosperity that impacts all New Yorkers.”
+        </p>
+
+        <p>
+            Adams and his team have set the goal of exceeding pre-pandemic tourism numbers in 2024. While the plan to achieve it focuses on economic investment, inclusion, and job training, Adams has also enacted policies that reduce Covid restrictions, like ending some mask mandates and proof-of-vaccination requirements. For the entire country’s international tourism industry to recover, they may need to take similar measures.
         </p>
 
         <hr>
